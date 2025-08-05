@@ -1,0 +1,23 @@
+[project]
+name = "notification-photopoint"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "AleksandrZaec",email = "zaecam95@mail.ru"}
+]
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "django (>=5.2.4,<6.0.0)",
+    "djangorestframework (>=3.16.0,<4.0.0)",
+    "celery (>=5.5.3,<6.0.0)",
+    "redis (>=6.2.0,<7.0.0)",
+    "requests (>=2.32.4,<3.0.0)",
+    "pytest (>=8.4.1,<9.0.0)",
+    "python-dotenv (>=1.1.1,<2.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
