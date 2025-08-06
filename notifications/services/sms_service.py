@@ -1,6 +1,7 @@
 import requests
 from config.settings import SMSC_LOGIN, SMSC_PASSWORD
 
+
 def send_sms_smsc(phone_number, message):
     if not phone_number:
         return False, "No phone number"
@@ -24,6 +25,7 @@ def send_sms_smsc(phone_number, message):
             return False, data.get('status_text', 'Unknown error')
     except Exception as e:
         return False, str(e)
+
 
 def send_sms(recipient, message):
     if not recipient.phone_number:

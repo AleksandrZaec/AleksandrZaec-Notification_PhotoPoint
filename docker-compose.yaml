@@ -30,6 +30,18 @@ services:
     env_file:
       - .env
 
+  tests:
+    build: .
+    command:   sh -c "pytest notifications/tests/ -v --ds=config.settings"
+    volumes:
+      - .:/app
+    depends_on:
+      db:
+        condition: service_healthy
+    env_file:
+      - .env
+
+
   celery:
     build: .
     tty: true

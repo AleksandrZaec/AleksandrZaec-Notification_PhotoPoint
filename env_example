@@ -1,0 +1,28 @@
+# App
+SECRET_KEY=your_secret_key
+DEBUG=TrueOrFalse
+
+# Database
+POSTGRES_DB=notifications
+POSTGRES_USER=user
+POSTGRES_PASSWORD=password
+POSTGRES_HOST=db
+POSTGRES_PORT=5432
+
+# Email
+EMAIL_HOST=smtp.example.com
+EMAIL_PORT=587
+EMAIL_HOST_USER=user@example.com
+EMAIL_HOST_PASSWORD=password
+DEFAULT_FROM_EMAIL=noreply@example.com
+
+# SMS
+SMSC_LOGIN=your_login
+SMSC_PASSWORD=your_password
+
+# Telegram
+TELEGRAM_BOT_TOKEN=your_bot_token
+
+# Celery
+CELERY_BROKER_URL=redis://redis:6379/0
+CELERY_RESULT_BACKEND=redis://redis:6379/0
